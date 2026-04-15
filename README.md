@@ -1,6 +1,6 @@
 # 🦺 Real-Time PPE Compliance Monitoring System (Multi-Model YOLOv11)
 
-## 📌 Overview
+##  Overview
 
 This project implements a **real-time Personal Protective Equipment (PPE) compliance monitoring system** using a **modular multi-model deep learning architecture**.
 
@@ -10,30 +10,30 @@ The system is deployed through an interactive **Streamlit dashboard** supporting
 
 ---
 
-## 🚀 Key Features
+##  Key Features
 
-* 🎯 **Multi-Model Architecture**
+* **Multi-Model Architecture**
 
   * One YOLO model per PPE category
   * Independent training and optimization
   * Flexible and modular deployment
 
-* 🎥 **Real-Time Detection**
+*  **Real-Time Detection**
 
   * Live webcam and IP camera support
   * Multi-camera monitoring
 
-* 🧠 **Compliance Analysis**
+*  **Compliance Analysis**
 
   * Detects missing PPE per person
   * Generates real-time safety alerts
 
-* 📊 **Data Logging & Analytics**
+* **Data Logging & Analytics**
 
   * Automatic CSV logging of detections
   * Real-time charts and historical dashboards
 
-* ⚙️ **Interactive UI**
+* **Interactive UI**
 
   * Built with Streamlit
   * Dynamic PPE selection
@@ -41,7 +41,7 @@ The system is deployed through an interactive **Streamlit dashboard** supporting
 
 ---
 
-## 🧠 System Architecture
+##  System Architecture
 
 ```
 Camera Input
@@ -52,7 +52,9 @@ PPE Detection (Multiple YOLOv11 Models)
      ├── Helmet Model
      ├── Gloves Model
      ├── Mask Model
-     ├── ...
+     ├── Glasses Model
+     ├── protective earmuffs Model
+     ├── Harness Model
      ↓
 Aggregation & Matching
      ↓
@@ -63,7 +65,7 @@ Dashboard + CSV Logging
 
 ---
 
-## 🏗️ Project Structure
+##  Project Structure
 
 ```
 ├── app/
@@ -73,6 +75,7 @@ Dashboard + CSV Logging
 │   ├── model_manager.py      # Multi-model loading & inference
 │   ├── detection.py          # Detection pipeline
 │   ├── compliance.py         # PPE compliance logic
+│   ├── visualization.py      # visualizing detection results in real time
 │   ├── data_logger.py        # CSV logging & data handling
 │
 ├── models/                   # Trained YOLO models (.pt)
@@ -84,7 +87,7 @@ Dashboard + CSV Logging
 
 ---
 
-## 🤖 Model Training
+## Model Training
 
 Each PPE category is trained **independently** using YOLOv11.
 
@@ -105,7 +108,7 @@ Each PPE category is trained **independently** using YOLOv11.
 
 ---
 
-## 📊 Model Performance (Helmet Model)
+##  Model Performance (Helmet Model)
 
 | Metric                 | Value  |
 | ---------------------- | ------ |
@@ -117,23 +120,6 @@ Each PPE category is trained **independently** using YOLOv11.
 
 ---
 
-## ⚙️ Installation
-
-```bash
-git clone https://github.com/your-username/real-time-multi-model-ppe-detection-yolov11.git
-cd real-time-multi-model-ppe-detection-yolov11
-
-pip install -r requirements.txt
-```
-
----
-
-## ▶️ Usage
-
-```bash
-streamlit run app/streamlit_app.py
-```
-
 ### Features available in the UI:
 
 * Select PPE types to monitor
@@ -144,7 +130,7 @@ streamlit run app/streamlit_app.py
 
 ---
 
-## 🚨 Compliance Logic
+##  Compliance Logic
 
 The system evaluates PPE compliance based on detected persons:
 
@@ -159,7 +145,7 @@ Example:
 
 ---
 
-## 📈 Dashboard & Analytics
+##  Dashboard & Analytics
 
 * Real-time visualization of PPE detection
 * Historical data exploration by date
@@ -168,7 +154,7 @@ Example:
 
 ---
 
-## 🔍 Technical Highlights
+##  Technical Highlights
 
 * Multi-model inference pipeline
 * Real-time video processing with OpenCV
@@ -178,7 +164,7 @@ Example:
 
 ---
 
-## ⚠️ Limitations & Future Work
+## Limitations & Future Work
 
 * No person–PPE association (IoU matching can be added)
 * Performance can be optimized for edge devices
@@ -187,13 +173,13 @@ Example:
 
 ---
 
-## 📌 Conclusion
+##  Conclusion
 
 This project demonstrates how modular deep learning models can be combined into a **real-time intelligent monitoring system**, bridging the gap between computer vision research and real-world industrial applications.
 
 ---
 
-## 👩‍💻 Author
+##  Author
 
 **Yosra Hammoudi**
 Master’s Student in Data Science & Software Development
