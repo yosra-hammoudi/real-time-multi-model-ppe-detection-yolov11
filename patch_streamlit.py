@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import streamlit.watcher.local_sources_watcher as lsw
 
 def safe_get_module_paths(module):
@@ -8,4 +9,16 @@ def safe_get_module_paths(module):
     except Exception:
         return []
 
+=======
+import streamlit.watcher.local_sources_watcher as lsw
+
+def safe_get_module_paths(module):
+    try:
+        if hasattr(module, '__path__'):
+            return list(module.__path__._path) if hasattr(module.__path__, '_path') else []
+        return []
+    except Exception:
+        return []
+
+>>>>>>> a83dd39 (clean initial commit)
 lsw.get_module_paths = safe_get_module_paths
