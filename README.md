@@ -75,7 +75,7 @@ Dashboard + CSV Logging
 │   ├── model_manager.py      # Multi-model loading & inference
 │   ├── detection.py          # Detection pipeline
 │   ├── compliance.py         # PPE compliance logic
-│   ├── visualization.py      # visualizing detection results in real time
+│   ├── visualization.py      # Visualizing real-time detection results
 │   ├── data_logger.py        # CSV logging & data handling
 │
 ├── models/                   # Trained YOLO models (.pt)
